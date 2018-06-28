@@ -1,4 +1,13 @@
-div {
-border: 1px solid black;
-margin: 50px;
+body {
+    background-color: lightblue;
+}
+    
+    
+.sectionsDesign {
+    border: 1px solid black;
+    margin: 50px;
+    padding: 50px;
+    float: left;
+    background-color: white;
+
 }

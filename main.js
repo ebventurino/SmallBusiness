@@ -129,3 +129,8 @@ for (let i = 0; i < employeeId.length; i++) {
     
     
 }
+
+const divId = document.querySelectorAll("div");
+for (let x = 0; x < divId.length; x++) {
+    divId[x].classList.add("sectionsDesign")
+}
