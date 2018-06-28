@@ -78,24 +78,36 @@ for (let i = 0; i < employees.length; i++) {
     const newStatement = document.createTextNode(employees[i].name);
     newSection.appendChild(newStatement);
     document.body.appendChild(newSection);
-    if (employees[i].departmentId = 1) {
-        const newSection = document.createElement("p")
-        const newStatement = document.createTextNode("Tech");
-        newSection.appendChild(newStatement);
-        document.body.appendChild(newSection);
-    } else if (employees[i].departmentId = 2) {
-        const newSection1 = document.createElement("p")
-        const newStatement1 = document.createTextNode("Marketing");
+    console.log(employees[i].department)
+    if (employees[i].department === 1) {
+        const newSection1 = document.createElement("section")
+        const newStatement1 = document.createTextNode("Tech");
         newSection1.appendChild(newStatement1);
         document.body.appendChild(newSection1);
-    } else {
-        const newSection2 = document.createElement("p")
-        const newStatement2 = document.createTextNode("Design");
-        newSection.appendChild(newStatement2);
+    } else if (employees[i].department === 2) {
+        const newSection2 = document.createElement("section")
+        const newStatement2 = document.createTextNode("Marketing");
+        newSection2.appendChild(newStatement2);
         document.body.appendChild(newSection2);
+    } else {
+        const newSection3 = document.createElement("section")
+        const newStatement3 = document.createTextNode("Design");
+        newSection3.appendChild(newStatement3);
+        document.body.appendChild(newSection3);
 
     }
-    //  var btn = document.createElement("BUTTON");
+    if (employees[i].computer === 1) {
+        const newSection4 = document.createElement("section")
+        const newStatement4 = document.createTextNode("PC");
+        newSection4.appendChild(newStatement4);
+        document.body.appendChild(newSection4);
+    } else {
+        const newSection5 = document.createElement("section")
+        const newStatement5 = document.createTextNode("Laptop");
+        newSection5.appendChild(newStatement5);
+        document.body.appendChild(newSection5);
+
+    }
   
 
 }
